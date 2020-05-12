@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(https://dvqlxo2m2q99q.cloudfront.net/000_clients/553303/page/5533036uyBRQHZ.jpg);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13pt;
+    filter: blur(0,4);
+}
+header{
+    height: 100vh;
+}
+.navbar{
+    background-color: rgba(0,0,0,.8) !important;
+    text-align: center;
+    align-items: center ;
+}
+.menu {
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    width: 100vw;
+    top: 50%;
+    color: white;
+    align-items: center;
+}
+.fa{
+    text-decoration: none;
+    color:white;
+}
+.footer {
+    background-color: #00000048;
+    color: white;
+}

@@ -1,0 +1,61 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: inherit;
+}
+body{
+    background-image: url('../img/back.jpeg');
+    background-attachment: scroll;
+    background-repeat:no-repeat;
+    background-color: white;
+    color: black;
+    height: 100vh;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: rgba(0,0,0,.8);
+}
+.menu li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    color: yellow;    
+}
+.site-subtitle,
+.site-title{
+    color: white;
+    text-align: center;
+}
+.site-subtitle{
+    font-style: italic;
+}
+.fa{
+    padding-bottom: 40px;
+}
+.fa-instagram{
+    padding-left: 49%;
+    color: ivory;
+    
+}
+.card{
+    background-color: white;
+    border-radius: 3px;
+    padding: 20px 30px;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 75%;
+    font-family: sans-serif;
+    transition: 0.10s;
+}
+.card img{
+    height: 29vh;
+    filter: blur(3px);
+    border: black;
+}
