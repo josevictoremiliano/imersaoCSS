@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: inherit;
+}
+body {
+  background-image: linear-gradient(rgb(36, 19, 74),rgb(139, 30, 139) ,  #5e62ab);
+  color: black;
+  font-family: 'Roboto Slab', serif;
+  margin: 0;
+
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+/* Se a tela tiver pelo menos 400px vai carregar estes estilos */
+@media (min-width: 400px) {
+  body {
+    font-size: 14px !important ;
+  }
+  .menu a{
+    font-size: 17pt;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 18px !important;
+  }
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  background-color: rgba(34, 34, 34, 0.70);
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 1;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 5px 40px 5px;
+}
+
+.menu a:hover {
+  text-decoration: none;
+  color: yellow;
+  background-color: rgba(0, 0, 0, 0.158); 
+  transition: 2s;
+}
+
+.site-subtitle,
+.site-title {
+  color: white;
+  text-align: center;
+}
+.site-title{
+    font-size: 34pt;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.site-subtitle {
+  font-style: italic;
+  font-family: 'Raleway', sans-serif;
+}
+header .scroll{
+  width: 25px;
+  height: 45px;
+  border: 2px solid #fff;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  border-radius: 12px;
+  text-align: center;
+  transform: 0.2s linear 1s rotateplane;
+}
+@keyframes rotateplane {
+  0%   {top:10px;}
+  25%  {top:14px;}
+  50%  {top:19px;}
+  75%  {top:24px;}
+  100% {top:28px;}
+}
+header .scroll:after{
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  background-color: #fff;
+  border-radius: 100%;
+  left: 50%;
+  top: 10px;
+  margin-left: -2.5px;
+  transition: all 0.3s ease-in;
+  animation-name: rotateplane;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.contato,
+.projetos{
+  padding: 2em;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.158);
+}
+.contato,
+.projetos h2{
+  font-family: 'Balsamiq Sans', cursive;
+  color: white;
+  margin-top: 1.7em;
+  margin-bottom: 1.7em;
+  font-size: 20pt;
+}
+.projetos .grid{
+  display: grid;
+  gap: 2em;
+  color: white;
+  justify-content: center;
+}
+@media (min-width:560px){
+  .projetos .grid{
+   grid-template-columns: 270px 270px;
+   justify-content: center;
+  }
+}
+@media (min-width:880px){
+  .projetos .grid{
+   grid-template-columns: repeat(3, 280px);
+   align-content: center;
+   justify-content: center;
+   height: calc(100vh - 4em - 48px - 1.5em );
+  }
+}
+.projetos figure{
+  text-align: center;
+}
+.img-portfolio {
+  width: 280px;
+  height: 300px;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 4px;
+  transition: transform 500ms;
+}
+.img-portfolio:hover{
+  transform: scale(1.05);
+}
+.contato .icons{
+  text-align: center;
+}
+.contato a{
+  font-size: 25pt;
+  transition: font-size 1s;
+}
+.contato a:active{
+  text-shadow: 0.5px 0.4px 8px blueviolet;
+}
+.contato a:hover{
+  font-size: 26pt;
+  text-shadow: 0.3px 0.3px 5px rgb(255, 255, 255);
+}
+
+/*  menu hamburgue */
+/**
+#menucheck{
+  position: absolute;
+  opacity: 0;
+}
+label{
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 20px;
+  width: 30px;
+  z-index: 1;
+}
+label span{
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 30px;
+  background: white;
+  transition: 0.25s ease-in-out;
+}
+label span:nth-child(1){
+  top: 0;
+}
+label span:nth-child(2){
+  top: 8px;
+}
+header label span:nth-child(3){
+  top: 16px;
+}
+#menucheck:checked + label span:nth-child(1){
+  transform: rotate(-45deg);
+  top: 8px;
+}
+#menucheck:checked + label span:nth-child(2){
+  opacity: 0;
+}
+#menucheck:checked + label span:nth-child(3){
+  transform: rotate(45deg);
+  top: 8px
+}*/
